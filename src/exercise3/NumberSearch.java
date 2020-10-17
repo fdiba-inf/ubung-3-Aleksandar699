@@ -1,19 +1,28 @@
 package exercise3;
-import java.util.Scanner;
+
 public class NumberSearch {
 public static void main(String [] args) {
-  int s = 100;
-  int p = 0;
+  int anzahl = 0;
+  
   for (int i = 100; i<=1000; i++) {
     if (i%5==0 && i%6==0) {
-      System.out.print(" " +i);
-      p++;
+      if (anzahl<9){      
+      System.out.print(i + " ");
+      anzahl++;
+      }else if(anzahl==9){
+      anzahl++;
+    System.out.print(i);
+    if(anzahl==10){
+    System.out.print("\n");
+    anzahl=0;
     }
-    if (p>9) {
-    System.out.println("");
-    p=0;
+
+    
 }
 }
 }
 }
+}
+
+
   
