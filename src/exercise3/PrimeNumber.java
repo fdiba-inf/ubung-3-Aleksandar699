@@ -15,8 +15,9 @@ if (number % d ==0) {
 }
 d++;
 }
-System.out.println(prime);
+System.out.println("prime number: " + prime);
 }
 }
+
 
 
